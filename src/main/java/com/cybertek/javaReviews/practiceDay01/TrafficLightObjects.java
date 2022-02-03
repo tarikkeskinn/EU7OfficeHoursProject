@@ -4,9 +4,13 @@ public class TrafficLightObjects {
 
     public static void main(String[] args) {
 
-        TrafficLight trafficLight= new TrafficLight("09:45");
+        TrafficLight trafficLight; // Object variable / reference to object
 
-        trafficLight.changeColor("yellow");
+        trafficLight = new TrafficLight("09:42 PM"); // new TrafficLight(); this statement holds the object
+
+        //  new TrafficLight().changeColor("yellow");
+
+        trafficLight.changeColor("red");
 
         trafficLight.showColor();
 
@@ -17,6 +21,14 @@ public class TrafficLightObjects {
 
         System.out.println("trafficLight2 = " + trafficLight2.localTime);
         System.out.println("TrafficLight.localTime = " + TrafficLight.localTime);
+        System.out.println("trafficLight = " + trafficLight.localTime);
+
+
+        trafficLight.showColor();
+        trafficLight2.showColor();
+
+        TrafficLight.showTime();
 
     }
+
 }
